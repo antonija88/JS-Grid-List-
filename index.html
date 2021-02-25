@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Antonija Otmacic">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Books</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Books</h1>
+      <i id="gridListIcon" onclick="changeGridToList()" class="material-icons">
+        view_list
+      </i>
+    </div>
+  </header>
+  <main>
+    <div id="grid" class="card-container-grid">
+
+      <article id="card1" class="card">
+
+        <section class="book-info">
+
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+          <blockquote class="quote">
+            <p class="book-title">The Wizard of Oz</p>
+            <p class="quote-text">
+              Dorothy found herself riding easily between two of the biggest Monkeys, one of them the King himself. They had made a chair of their hands and were careful not to hurt her. "Why do you have to obey the charm of the Golden Cap?"
+            </p>
+            <p class="author-font"> L. Frank Baum</p>
+          </blockquote>
+
+        </section>
+
+        <section id="footer-info1" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">16</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+
+      </article>
+
+
+      <article id="card2" class="card">
+        <section class="book-info">
+
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+
+          <blockquote class="quote">
+            <p class="book-title">Moby Dick</p>
+            <p class="quote-text">
+              Round the world! There is much in that sound to inspire proud feelings; but whereto does all that circumnavigation conduct? Only through numberless perils to the very point whence we started, where those that we left behind secure, were
+              all the time before us.
+            </p>
+            <p class="author-font"> Herman Menville</p>
+          </blockquote>
+
+
+        </section>
+
+        <section id="footer-info2" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">28</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+        </section>
+      </article>
+
+
+      <article id="card3" class="card">
+        <section class="book-info">
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+          <blockquote class="quote">
+            <p class="book-title">The War of the worlds</p>
+            <p class="quote-text">
+              "What news from the common?" I said. "People seem fair silly about the common," said the woman over the gate.
+            </p>
+            <p class="author-font">H. G. Wells</p>
+          </blockquote>
+        </section>
+
+        <section id="footer-info3" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">19</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+      </article>
+
+
+      <article id="card4" class="card">
+
+        <section class="book-info">
+
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+
+          <blockquote class="quote">
+            <p class="book-title">At the Earth's Core</p>
+            <p class="quote-text">
+              I wondered why these agile creatures required connecting brridges between the trees, but later when I saw the motley aggregation of half-savage beasts which they kept within their village I realized necessity for the pathways.
+            </p>
+            <p class="author-font">Edgar Rice Burroughs</p>
+          </blockquote>
+
+        </section>
+
+        <section id="footer-info4" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">8</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+      </article>
+
+
+      <article id="card5" class="card">
+
+        <section class="book-info">
+
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+          <blockquote class="quote">
+            <p class="book-title">A Princess of Mars</p>
+            <p class="quote-text">
+              I drew rein on a little level promontory overlooking the trail below and to my left, and saw the party of persuing savages disappearing around the point of a neighboring peak.
+            </p>
+            <p class="author-font"> Edgar Rice Burroughs</p>
+          </blockquote>
+
+        </section>
+
+        <section id="footer-info5" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">11</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+      </article>
+
+
+      <article id="card6" class="card">
+        <section class="book-info">
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+
+          <blockquote class="quote">
+            <p class="book-title">Alice in Wonderland</p>
+            <p class="quote-text">
+              The Hatter shook his head mournfully. "Not I!" he replied. "We quarrelled last March-just before HE went mad, you know-"
+            </p>
+            <p class="author-font">Lewis Carroll</p>
+          </blockquote>
+
+        </section>
+
+
+        <section id="footer-info6" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">21</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+
+      </article>
+
+
+
+
+      <article id="card7" class="card">
+
+        <section class="book-info">
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+
+          <blockquote class="quote">
+            <p class="book-title">The Scarlet Plague</p>
+            <p class="quote-text">
+              It was at this point that Hare- Lip rose to his feet, an expression of huge contempt on his face. "Granser," he announced, "you make me sick with your gabble."
+            </p>
+            <p class="author-font">Jack London</p>
+          </blockquote>
+        </section>
+
+
+
+        <section id="footer-info7" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">13</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+
+      </article>
+
+
+      <article id="card8" class="card">
+        <section class="book-info">
+          <figure class="book-img">
+            <img class="image" src="https://www.adazing.com/wp-content/uploads/2012/07/girl-with-dragon-tatoo.jpg" alt="Book Covers">
+          </figure>
+
+          <blockquote class="quote">
+            <p class="book-title">Around the World in 80 Days</p>
+            <p class="quote-text">
+              Nothing could be more simple. Indeed, it was all so simple that Fix and Passepartout felt their hearts beating as if they would crack. They were listening for the whistle agreed upon, when suddenly savage cries resounded in the air,
+              accompanied by reports which certainly did not issue from the car where the duellist were.
+            </p>
+            <p class="author-font">Jules Vernem</p>
+          </blockquote>
+
+        </section>
+
+        <section id="footer-info8" class="card-footer-info">
+
+          <figure class="star-footer">
+            <span class="material-icons">
+              star
+            </span>
+          </figure>
+
+          <p class="likes">18</p>
+          <a onmouseover="dropdownBooks(this)">
+            <figure class="more-icon">
+              <span class="material-icons">
+                more_horiz
+              </span>
+
+            </figure>
+          </a>
+
+        </section>
+      </article>
+    </div>
+
+  </main>
+
+  <script src="books.js"></script>
+
+</body>
+
+</html>
